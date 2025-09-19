@@ -221,15 +221,15 @@ export default function Contact() {
         </div>
 
         {/* Hero Content */}
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="contact-hero-text text-5xl md:text-7xl font-display font-bold mb-6 leading-tight text-white">
-              Get In <span className="bg-gradient-to-r from-[#C48D2E] to-[#D6B456] bg-clip-text text-transparent">Touch</span>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl">
+            <h1 className="contact-hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
+              Get In <span className="hero-gradient-text">Touch</span>
             </h1>
-            <p className="contact-hero-text text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto">
-              Ready to transform your business? Let's create something amazing together
+            <p className="contact-hero-text hero-subtext text-lg md:text-xl text-white mb-8 max-w-3xl font-light">
+              Ready to transform your business? <span className="hero-accent-text text-[#D6B456] font-light">Let's create something amazing together</span>
             </p>
-            <div className="contact-hero-text flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="contact-hero-text hero-accent-text flex flex-col sm:flex-row gap-4 items-start">
               <button className="btn-primary text-lg px-8 py-4">
                 Start Project
               </button>
@@ -240,33 +240,17 @@ export default function Contact() {
           </div>
         </div>
         
-        {/* Contact highlights overlay */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="contact-hero-text flex items-center justify-center space-x-8 text-white font-medium bg-black/30 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg border border-white/10">
-            <div className="flex items-center space-x-2">
-              <Clock className="w-6 h-6 text-[#C48D2E]" />
-              <span>Quick Response</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-6 h-6 text-[#C48D2E]" />
-              <span>Free Consultation</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Globe className="w-6 h-6 text-[#C48D2E]" />
-              <span>Global Reach</span>
-            </div>
-          </div>
-        </div>
+
       </section>
 
       {/* Scroll Carousel Section */}
       <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Why Choose <span className="gradient-text">Us</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
               Discover the advantages of partnering with our experienced team for your digital transformation
             </p>
           </div>
@@ -281,10 +265,10 @@ export default function Contact() {
             {/* Contact Form */}
             <div ref={formRef}>
               <div className="contact-form bg-gradient-dark border border-secondary/20 rounded-2xl p-8">
-                <h2 className="text-3xl font-display font-bold mb-6 text-text-primary">
+                <h2 className="text-3xl font-display font-thin mb-6 text-text-primary">
                   Start Your Project
                 </h2>
-                <p className="text-black mb-8 font-medium">
+                <p className="text-black mb-8 font-light">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
 
@@ -293,10 +277,10 @@ export default function Contact() {
                     <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                       <CheckCircle className="w-8 h-8 text-green-500" />
                     </div>
-                    <h3 className="text-xl font-semibold text-text-primary mb-2">
+                    <h3 className="text-xl font-light text-text-primary mb-2">
                       Message Sent Successfully!
                     </h3>
-                    <p className="text-text-secondary">
+                    <p className="text-text-secondary font-light">
                       Thank you for reaching out. We'll be in touch soon.
                     </p>
                   </div>
@@ -304,7 +288,7 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-text-primary font-medium mb-2">
+                        <label className="block text-text-primary font-light mb-2">
                           Full Name *
                         </label>
                         <div className="relative">
@@ -322,7 +306,7 @@ export default function Contact() {
                       </div>
                       
                       <div>
-                        <label className="block text-text-primary font-medium mb-2">
+                        <label className="block text-text-primary font-light mb-2">
                           Email Address *
                         </label>
                         <div className="relative">
@@ -341,7 +325,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label className="block text-text-primary font-medium mb-2">
+                      <label className="block text-text-primary font-light mb-2">
                         Company Name
                       </label>
                       <div className="relative">
@@ -359,7 +343,7 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-text-primary font-medium mb-2">
+                        <label className="block text-text-primary font-light mb-2">
                           Service Needed *
                         </label>
                         <select
@@ -381,7 +365,7 @@ export default function Contact() {
                       </div>
                       
                       <div>
-                        <label className="block text-text-primary font-medium mb-2">
+                        <label className="block text-text-primary font-light mb-2">
                           Project Budget
                         </label>
                         <select
@@ -401,7 +385,7 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label className="block text-text-primary font-medium mb-2">
+                      <label className="block text-text-primary font-light mb-2">
                         Project Details *
                       </label>
                       <div className="relative">
@@ -443,10 +427,10 @@ export default function Contact() {
             {/* Contact Information */}
             <div ref={infoRef} className="space-y-8">
               <div>
-                <h2 className="text-3xl font-display font-bold mb-6 text-text-primary">
+                <h2 className="text-3xl font-display font-thin mb-6 text-text-primary">
                   Contact Information
                 </h2>
-                <p className="text-black mb-8 leading-relaxed font-medium">
+                <p className="text-black mb-8 leading-relaxed font-light">
                   We're here to help you succeed. Reach out through any of these channels and let's start building something incredible together.
                 </p>
               </div>
@@ -462,13 +446,13 @@ export default function Contact() {
                       <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
-                      <h3 className="text-lg font-semibold text-text-primary mb-2">
+                      <h3 className="text-lg font-light text-text-primary mb-2">
                         {info.title}
                       </h3>
-                      <p className="text-primary font-medium mb-1">
+                      <p className="text-primary font-light mb-1">
                         {info.details}
                       </p>
-                      <p className="text-black text-sm font-medium">
+                      <p className="text-black text-sm font-light">
                       {info.description}
                     </p>
                       {info.action && (
@@ -486,10 +470,10 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="bg-gradient-dark border border-secondary/20 rounded-2xl p-6">
-                <h3 className="text-xl font-semibold text-text-primary mb-4">
+                <h3 className="text-xl font-light text-text-primary mb-4">
                   Follow Us
                 </h3>
-                <p className="text-black mb-6 font-medium">
+                <p className="text-black mb-6 font-light">
                   Stay connected and follow our journey on social media.
                 </p>
                 <div className="flex space-x-4">
@@ -513,21 +497,21 @@ export default function Contact() {
 
               {/* FAQ */}
               <div className="bg-gradient-dark border border-secondary/20 rounded-2xl p-6">
-                <h3 className="text-xl font-semibold text-text-primary mb-4">
+                <h3 className="text-xl font-light text-text-primary mb-4">
                   Quick Questions?
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-primary font-medium mb-1">How quickly can you start?</h4>
-                    <p className="text-black text-sm font-medium">We typically begin new projects within 1-2 weeks of contract signing.</p>
+                    <h4 className="text-primary font-light mb-1">How quickly can you start?</h4>
+                    <p className="text-black text-sm font-light">We typically begin new projects within 1-2 weeks of contract signing.</p>
                   </div>
                   <div>
-                    <h4 className="text-primary font-medium mb-1">Do you offer ongoing support?</h4>
-                    <p className="text-black text-sm font-medium">Yes, we provide comprehensive support and maintenance packages.</p>
+                    <h4 className="text-primary font-light mb-1">Do you offer ongoing support?</h4>
+                    <p className="text-black text-sm font-light">Yes, we provide comprehensive support and maintenance packages.</p>
                   </div>
                   <div>
-                    <h4 className="text-primary font-medium mb-1">Can you work with our existing team?</h4>
-                    <p className="text-black text-sm font-medium">Absolutely! We love collaborating with in-house teams.</p>
+                    <h4 className="text-primary font-light mb-1">Can you work with our existing team?</h4>
+                    <p className="text-black text-sm font-light">Absolutely! We love collaborating with in-house teams.</p>
                   </div>
                 </div>
               </div>

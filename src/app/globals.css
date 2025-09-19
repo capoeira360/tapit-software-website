@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 :root {
   /* Tapit Color Palette */
@@ -80,7 +80,7 @@ body {
 /* Custom components */
 /* Navigation styles */
 .nav-link {
-  @apply text-lg font-semibold text-[var(--color-text)] hover:text-[var(--color-primary)] transition-all duration-300 relative;
+  @apply text-lg font-light text-[var(--color-text)] hover:text-[var(--color-primary)] transition-all duration-300 relative;
 }
 
 .nav-link::after {
@@ -100,7 +100,7 @@ body {
 
 /* Button styles */
 .btn-primary {
-  @apply bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-base)] font-semibold hover:bg-[var(--color-gold-metallic)] transition-all duration-300 transform hover:-translate-y-1;
+  @apply bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-base)] font-light hover:bg-[var(--color-gold-metallic)] transition-all duration-300 transform hover:-translate-y-1;
   box-shadow: var(--shadow-light);
 }
 
@@ -109,11 +109,11 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-8 py-4 rounded-[var(--radius-base)] font-semibold hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 transform hover:-translate-y-1;
+  @apply bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-8 py-4 rounded-[var(--radius-base)] font-light hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 transform hover:-translate-y-1;
 }
 
 .btn-accent {
-  @apply bg-[var(--color-accent)] text-white px-8 py-4 rounded-[var(--radius-base)] font-semibold hover:bg-[var(--color-moss-green)] transition-all duration-300 transform hover:-translate-y-1;
+  @apply bg-[var(--color-accent)] text-white px-8 py-4 rounded-[var(--radius-base)] font-light hover:bg-[var(--color-moss-green)] transition-all duration-300 transform hover:-translate-y-1;
   box-shadow: var(--shadow-light);
 }
 
@@ -396,4 +396,44 @@ textarea:focus {
 /* Navigation utilities */
 .text-shadow-glow {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(214, 180, 86, 0.3);
+}
+
+/* Hero Section Typography */
+.hero-heading {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtext {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-accent-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced text effects for hero sections */
+.hero-text-glow {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(196, 141, 46, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-gradient-text {
+  background: linear-gradient(135deg, #C48D2E 0%, #D6B456 50%, #F4E4A6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }

@@ -259,15 +259,15 @@ export default function Services() {
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="services-hero-text text-5xl md:text-7xl font-display font-bold mb-6 text-white">
-              Our <span className="bg-gradient-to-r from-[#C48D2E] to-[#D6B456] bg-clip-text text-transparent">Services</span>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl">
+            <h1 className="services-hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
+              Our <span className="hero-gradient-text">Services</span>
             </h1>
-            <p className="services-hero-text text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-               Comprehensive digital solutions tailored to transform your business and drive growth in the digital age.
+            <p className="services-hero-text hero-subtext text-lg md:text-xl text-white mb-8 max-w-3xl">
+               Comprehensive digital solutions tailored to <span className="hero-accent-text text-[#D6B456] font-light">transform your business and drive growth in the digital age.</span>
              </p>
-             <div className="services-hero-text flex items-center justify-center space-x-8 text-white">
+             <div className="services-hero-text hero-accent-text flex items-center space-x-8 text-white">
               <div className="flex items-center space-x-2">
                 <Clock className="w-6 h-6 text-primary" />
                 <span>Fast Delivery</span>
@@ -289,10 +289,10 @@ export default function Services() {
       <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Expertise</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
               Discover our comprehensive range of services designed to elevate your digital presence
             </p>
           </div>
@@ -311,10 +311,10 @@ export default function Services() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               What We <span className="gradient-text">Create</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto font-light">
               Innovative digital solutions that transform ideas into powerful experiences
             </p>
           </div>
@@ -354,10 +354,10 @@ export default function Services() {
               </div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-display font-light mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
                   Mobile Apps
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed font-light">
                   Native and cross-platform mobile applications with stunning UI and seamless performance across iOS and Android.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -365,7 +365,7 @@ export default function Services() {
                   <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Flutter</span>
                   <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Swift</span>
                 </div>
-                <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
+                <div className="flex items-center text-blue-600 font-light group-hover:text-blue-700 transition-colors">
                   <span>Explore Mobile Solutions</span>
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -411,10 +411,10 @@ export default function Services() {
               </div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
+                <h3 className="text-2xl font-display font-light mb-4 text-gray-800 group-hover:text-green-600 transition-colors">
                   Websites
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed font-light">
                   Modern, responsive websites and web applications built with cutting-edge technologies for optimal performance.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -422,7 +422,7 @@ export default function Services() {
                   <span className="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
                   <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
                 </div>
-                <div className="flex items-center text-green-600 font-semibold group-hover:text-green-700 transition-colors">
+                <div className="flex items-center text-green-600 font-light group-hover:text-green-700 transition-colors">
                   <span>Discover Web Solutions</span>
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -467,10 +467,10 @@ export default function Services() {
               </div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-display font-bold mb-4 text-gray-800 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-2xl font-display font-light mb-4 text-gray-800 group-hover:text-purple-600 transition-colors">
                   AI Functions
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed font-light">
                   Intelligent AI-powered solutions including machine learning, natural language processing, and automation systems.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -478,7 +478,7 @@ export default function Services() {
                   <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">OpenAI</span>
                   <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
                 </div>
-                <div className="flex items-center text-purple-600 font-semibold group-hover:text-purple-700 transition-colors">
+                <div className="flex items-center text-purple-600 font-light group-hover:text-purple-700 transition-colors">
                   <span>Explore AI Solutions</span>
                   <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -503,10 +503,10 @@ export default function Services() {
       <section ref={processRef} className="py-16 bg-gradient-dark">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Process</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               A proven methodology that ensures successful project delivery
             </p>
           </div>
@@ -529,10 +529,10 @@ export default function Services() {
                   </div>
                   
                   <div className="flex-1">
-                    <h3 className="text-xl font-display font-semibold mb-3 text-text-primary">
+                    <h3 className="text-xl font-display font-light mb-3 text-text-primary">
                       {step.title}
                     </h3>
-                    <p className="text-black leading-relaxed font-medium">
+                    <p className="text-black leading-relaxed font-light">
                       {step.description}
                     </p>
                   </div>
@@ -555,10 +555,10 @@ export default function Services() {
       <section className="py-16" style={{backgroundColor: '#3B1C0A'}}>
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6 text-white">
               Ready to Get <span className="gradient-text">Started?</span>
             </h2>
-            <p className="text-lg text-white mb-8">
+            <p className="text-lg text-white mb-8 font-light">
               Let's discuss your project requirements and create a custom solution that fits your needs and budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

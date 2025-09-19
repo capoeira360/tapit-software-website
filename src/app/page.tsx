@@ -189,16 +189,20 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="hero-text text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 text-white">
+        <div className="container mx-auto px-6 relative z-10 mt-16">
+          <div className="max-w-4xl">
+            <h1 className="hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
               Transform Your
-              <span className="block bg-gradient-to-r from-[#C48D2E] to-[#D6B456] bg-clip-text text-transparent">Digital Vision</span>
+              <span className="block hero-gradient-text">Digital Vision</span>
             </h1>
-            <p className="hero-text text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto leading-relaxed">
-              We specialize in designing cutting-edge websites, mobile applications, and AI systems that drive innovation and business growth.
+            <p className="hero-text hero-subtext text-base md:text-lg text-white mb-4 max-w-2xl">
+              Empower Your Business with Intelligent Software Solutions
             </p>
-            <div className="hero-cta flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <p className="hero-text hero-subtext text-base md:text-lg text-white mb-8 max-w-2xl">
+              At TAPit Software Company Ltd, we deliver cutting-edge, AI-driven software tailored to elevate solopreneurs and growing businesses. From custom web and mobile apps to seamless payment integrations, we build the tools that power your success in Tanzania and beyond.
+              <span className="hero-accent-text text-[#D6B456] font-light block mt-2">Innovate. Automate. Thrive.</span>
+            </p>
+            <div className="hero-cta flex flex-col sm:flex-row gap-4 items-start">
               <Link href="/contact" className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 group">
                 <span>Start Your Project</span>
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -217,10 +221,10 @@ export default function Home() {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Capabilities</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               Discover the full spectrum of our digital expertise
             </p>
           </div>
@@ -232,10 +236,10 @@ export default function Home() {
       <section ref={servicesRef} id="services" className="py-12 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Expertise</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               We deliver comprehensive digital solutions tailored to your unique business needs
             </p>
           </div>
@@ -252,10 +256,10 @@ export default function Home() {
                     <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors duration-300">
                       <IconComponent className="w-8 h-8 text-primary" />
                     </div>
-                    <h3 className="text-2xl font-display font-semibold mb-4 text-text-primary">
+                    <h3 className="text-2xl font-display font-light mb-4 text-text-primary">
                       {service.title}
                     </h3>
-                    <p className="text-black leading-relaxed mb-6 font-medium">
+                    <p className="text-black leading-relaxed mb-6 font-light">
                       {service.description}
                     </p>
                   </div>
@@ -264,7 +268,7 @@ export default function Home() {
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center space-x-3">
                         <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="text-black font-medium">{feature}</span>
+                        <span className="text-black font-light">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -286,10 +290,10 @@ export default function Home() {
                   <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="text-3xl md:text-4xl font-display font-bold text-text-primary mb-2">
+                  <div className="text-3xl md:text-4xl font-display font-thin text-text-primary mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-black font-medium">
+                  <div className="text-black font-light">
                     {stat.label}
                   </div>
                 </div>
@@ -303,10 +307,10 @@ export default function Home() {
       <section className="py-20" style={{backgroundColor: '#3B1C0A'}}>
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6 text-white">
               Ready to <span className="gradient-text">Get Started?</span>
             </h2>
-            <p className="text-lg text-white mb-8 font-medium">
+            <p className="text-lg text-white mb-8 font-light">
               Let's discuss your project and bring your digital vision to life
             </p>
             <Link href="/contact" className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 mx-auto group">

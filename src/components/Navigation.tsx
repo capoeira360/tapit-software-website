@@ -214,7 +214,7 @@ export default function Navigation() {
             <Link
               key={item.name}
               href={item.href}
-              className={`relative px-4 py-2 rounded-lg transition-all duration-300 group font-bold ${
+              className={`relative px-4 py-2 rounded-lg transition-all duration-300 group font-light ${
                 inCTA || inHero
                   ? 'text-white hover:text-[#D6B456] drop-shadow-lg hover:drop-shadow-xl'
                   : 'text-gray-900 hover:text-primary drop-shadow-sm'
@@ -226,13 +226,6 @@ export default function Navigation() {
               }`} />
             </Link>
           ))}
-          <button className={`ml-4 px-6 py-2 rounded-full font-bold transition-all duration-500 hover:scale-105 ${
-              inCTA || inHero
-                ? 'bg-transparent text-white border-2 border-white/50 hover:border-[#D6B456] hover:text-[#D6B456] drop-shadow-lg backdrop-blur-sm'
-                : 'bg-transparent text-gray-900 border-2 border-gray-900/50 hover:border-primary hover:text-primary drop-shadow-sm backdrop-blur-sm'
-            }`}>
-            Get Started
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -275,7 +268,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`block text-lg font-bold transition-all duration-300 py-2 hover:scale-105 ${
+                  className={`block text-lg font-light transition-all duration-300 py-2 hover:scale-105 ${
                     inCTA || inHero
                       ? 'text-white hover:text-[#D6B456] hover:pl-2 drop-shadow-lg'
                       : 'text-gray-800 hover:text-blue-600 hover:pl-2'
@@ -286,17 +279,7 @@ export default function Navigation() {
                 </Link>
               </li>
             ))}
-            <li className="pt-4">
-              <button 
-                  className={`w-full px-6 py-3 rounded-full font-bold transition-all duration-500 hover:scale-105 ${
-                    inCTA || inHero
-                      ? 'bg-transparent text-white border-2 border-white/50 hover:border-[#D6B456] hover:text-[#D6B456] drop-shadow-lg backdrop-blur-sm'
-                      : 'bg-transparent text-gray-900 border-2 border-gray-900/50 hover:border-primary hover:text-primary drop-shadow-sm backdrop-blur-sm'
-                  }`}
-                >
-                  Get Started
-                </button>
-            </li>
+
           </ul>
         </div>
       </div>

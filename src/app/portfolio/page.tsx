@@ -268,15 +268,15 @@ export default function Portfolio() {
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="portfolio-hero-text text-5xl md:text-7xl font-display font-bold mb-6 text-white">
-              Our <span className="bg-gradient-to-r from-[#C48D2E] to-[#D6B456] bg-clip-text text-transparent">Portfolio</span>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl">
+            <h1 className="portfolio-hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
+              Our <span className="hero-gradient-text">Portfolio</span>
             </h1>
-            <p className="portfolio-hero-text text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-               Discover the innovative digital solutions we've crafted for businesses across various industries.
+            <p className="portfolio-hero-text hero-subtext text-lg md:text-xl text-white mb-8 max-w-3xl font-light">
+               Discover the innovative digital solutions we've crafted for <span className="hero-accent-text text-[#D6B456] font-light">businesses across various industries.</span>
              </p>
-             <div className="portfolio-hero-text flex items-center justify-center space-x-8 text-white">
+             <div className="portfolio-hero-text hero-accent-text flex items-center space-x-8 text-white">
               <div className="flex items-center space-x-2">
                 <BarChart3 className="w-6 h-6 text-primary" />
                 <span>500+ Projects</span>
@@ -298,10 +298,10 @@ export default function Portfolio() {
       <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Work</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
               Explore our diverse portfolio of innovative digital solutions and successful project outcomes
             </p>
           </div>
@@ -322,11 +322,11 @@ export default function Portfolio() {
                   className={`filter-btn flex items-center space-x-2 px-6 py-3 rounded-full border transition-all duration-300 ${
                     activeFilter === filter.id
                       ? 'bg-primary text-background border-primary'
-                      : 'bg-background/50 text-black border-secondary/20 hover:border-primary/50 hover:text-black font-medium'
+                      : 'bg-background/50 text-black border-secondary/20 hover:border-primary/50 hover:text-black font-light'
                   }`}
                 >
                   <IconComponent className="w-5 h-5" />
-                  <span className="font-medium">{filter.label}</span>
+                  <span className="font-light">{filter.label}</span>
                 </button>
               );
             })}
@@ -369,10 +369,10 @@ export default function Portfolio() {
 
                   {/* Project Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-display font-semibold mb-3 text-text-primary group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-display font-light mb-3 text-text-primary group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-black mb-4 leading-relaxed font-medium">
+                    <p className="text-black mb-4 leading-relaxed font-light">
                       {project.description}
                     </p>
 
@@ -381,7 +381,7 @@ export default function Portfolio() {
                       {project.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="bg-secondary/20 text-black px-2 py-1 rounded text-sm font-medium"
+                          className="bg-secondary/20 text-black px-2 py-1 rounded text-sm font-light"
                         >
                           {tech}
                         </span>
@@ -392,15 +392,15 @@ export default function Portfolio() {
                     <div className="grid grid-cols-3 gap-4 mb-4">
                       {Object.entries(project.stats).map(([key, value], statIndex) => (
                         <div key={statIndex} className="text-center">
-                          <div className="text-primary font-bold text-sm">{value}</div>
-                          <div className="text-black text-xs capitalize font-medium">{key}</div>
+                          <div className="text-primary font-thin text-sm">{value}</div>
+                          <div className="text-black text-xs capitalize font-light">{key}</div>
                         </div>
                       ))}
                     </div>
 
                     {/* Features */}
                     <div className="space-y-2">
-                      <div className="text-sm font-medium text-text-primary mb-2">Key Features:</div>
+                      <div className="text-sm font-light text-text-primary mb-2">Key Features:</div>
                       <div className="flex flex-wrap gap-1">
                         {project.features.map((feature, featureIndex) => (
                           <span
@@ -424,10 +424,10 @@ export default function Portfolio() {
       <section className="py-20" style={{backgroundColor: '#3B1C0A'}}>
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6 text-white">
               Ready to Start Your <span className="gradient-text">Project?</span>
             </h2>
-            <p className="text-lg text-white mb-8">
+            <p className="text-lg text-white mb-8 font-light">
               Let's discuss how we can bring your vision to life with our proven expertise and innovative approach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

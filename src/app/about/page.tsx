@@ -212,15 +212,15 @@ export default function About() {
           <div className="absolute right-1/4 top-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse delay-200 shadow-lg shadow-cyan-400/50" />
         </div>
 
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="about-hero-text text-5xl md:text-7xl font-display font-bold mb-6 text-white">
-              About <span className="bg-gradient-to-r from-[#C48D2E] to-[#D6B456] bg-clip-text text-transparent">Tapit</span>
+        <div className="container mx-auto px-6 relative z-10 mt-16">
+          <div className="max-w-4xl">
+            <h1 className="about-hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
+              About <span className="hero-gradient-text">Tapit</span>
             </h1>
-            <p className="about-hero-text text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-              We are a passionate team of digital innovators, dedicated to transforming businesses through cutting-edge technology and creative solutions.
+            <p className="about-hero-text hero-subtext text-lg md:text-xl text-white mb-8 max-w-3xl">
+              We are a passionate team of digital innovators, <span className="hero-accent-text text-[#D6B456] font-light">dedicated to transforming businesses through cutting-edge technology and creative solutions.</span>
             </p>
-            <div className="about-hero-text flex items-center justify-center space-x-8 text-white/90">
+            <div className="about-hero-text hero-accent-text flex items-center space-x-8 text-white/90">
               <div className="flex items-center space-x-2">
                 <Globe className="w-6 h-6 text-primary" />
                 <span>Global Reach</span>
@@ -241,15 +241,15 @@ export default function About() {
       {/* Scroll Carousel Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+          <ScrollCarousel slides={carouselSlides} />
+          <div className="text-center mt-12">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Journey</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               Discover the story behind our passion for innovation and excellence
             </p>
           </div>
-          <ScrollCarousel slides={carouselSlides} />
         </div>
       </section>
 
@@ -258,10 +258,10 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="story-content">
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
                 Our <span className="gradient-text">Story</span>
               </h2>
-              <div className="space-y-6 text-black leading-relaxed font-medium">
+              <div className="space-y-6 text-black leading-relaxed font-light">
                 <p className="text-lg">
                   Founded in 2018, TAPit emerged from a simple yet powerful vision: to bridge the gap between innovative technology and real-world business needs. Our journey began when our founders recognized that many businesses were struggling to adapt to the digital revolution.
                 </p>
@@ -275,18 +275,18 @@ export default function About() {
             </div>
             <div className="story-content">
               <div className="bg-gradient-dark rounded-2xl p-8 border border-secondary/20">
-                <h3 className="text-2xl font-display font-semibold mb-6 text-text-primary">Our Mission</h3>
-                <p className="text-black text-lg leading-relaxed mb-6 font-medium">
+                <h3 className="text-2xl font-display font-light mb-6 text-text-primary">Our Mission</h3>
+                <p className="text-black text-lg leading-relaxed mb-6 font-light">
                   To empower businesses with innovative digital solutions that drive growth, enhance efficiency, and create meaningful connections with their customers.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                    <div className="text-black font-medium">Projects Delivered</div>
+                    <div className="text-3xl font-thin text-primary mb-2">500+</div>
+                    <div className="text-black font-light">Projects Delivered</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">6</div>
-                    <div className="text-black font-medium">Years Experience</div>
+                    <div className="text-3xl font-thin text-primary mb-2">6</div>
+                    <div className="text-black font-light">Years Experience</div>
                   </div>
                 </div>
               </div>
@@ -299,10 +299,10 @@ export default function About() {
       <section ref={teamRef} className="py-16 bg-gradient-dark">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Meet Our <span className="gradient-text">Team</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               The brilliant minds behind TAPit's innovative solutions
             </p>
           </div>
@@ -319,12 +319,12 @@ export default function About() {
                     <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors duration-300">
                       <IconComponent className="w-10 h-10 text-primary" />
                     </div>
-                    <h3 className="text-xl font-display font-semibold mb-2 text-text-primary">
+                    <h3 className="text-xl font-display font-light mb-2 text-text-primary">
                       {member.name}
                     </h3>
-                    <div className="text-primary font-medium mb-2">{member.role}</div>
-                    <div className="text-sm text-black mb-3 font-medium">{member.expertise}</div>
-                    <p className="text-black text-sm leading-relaxed font-medium">
+                    <div className="text-primary font-light mb-2">{member.role}</div>
+                    <div className="text-sm text-black mb-3 font-light">{member.expertise}</div>
+                    <p className="text-black text-sm leading-relaxed font-light">
                       {member.description}
                     </p>
                   </div>
@@ -339,10 +339,10 @@ export default function About() {
       <section ref={valuesRef} className="py-16 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6">
               Our <span className="gradient-text">Values</span>
             </h2>
-            <p className="text-xl text-black max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-black max-w-2xl mx-auto font-light">
               The principles that guide everything we do
             </p>
           </div>
@@ -355,10 +355,10 @@ export default function About() {
                   <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <IconComponent className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-display font-semibold mb-4 text-text-primary">
+                  <h3 className="text-xl font-display font-light mb-4 text-text-primary">
                     {value.title}
                   </h3>
-                  <p className="text-black leading-relaxed font-medium">
+                  <p className="text-black leading-relaxed font-light">
                     {value.description}
                   </p>
                 </div>
@@ -372,10 +372,10 @@ export default function About() {
       <section className="py-16" style={{backgroundColor: '#3B1C0A'}}>
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-display font-thin mb-6 text-white">
               Ready to Work <span className="gradient-text">Together?</span>
             </h2>
-            <p className="text-lg text-white mb-8 font-medium">
+            <p className="text-lg text-white mb-8 font-light">
               Let's discuss how we can help transform your business with innovative digital solutions.
             </p>
             <button className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 mx-auto group">
