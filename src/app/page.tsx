@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollCarousel, { CarouselSlide } from "../components/ScrollCarousel";
+import HeroSection from "../components/HeroSection";
 import { 
   Code, 
   Smartphone, 
@@ -153,69 +154,27 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section 
-        ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-20 pt-20"
+      <HeroSection
+        title={
+          <>
+            Transform Your
+            <span className="block hero-gradient-text">Digital Vision</span>
+          </>
+        }
+        description="We specialize in designing cutting-edge websites, mobile applications, and AI systems that drive innovation and business growth."
+        showMicrochipNodes={true}
+        showLogoWatermark={true}
       >
-        {/* Background image */}
-        <div 
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url('/close-up-code-running-laptop-screen-data-center.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        />
-        {/* Dark overlay removed for cleaner background */}
-        
-        {/* Animated background elements */}
-        <div className="absolute inset-0">
-          {/* Microchip-inspired glowing nodes */}
-          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-[#C48D2E]/20 to-[#D6B456]/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-          
-
-          
-          {/* Microchip nodes */}
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#C48D2E] rounded-full animate-pulse shadow-lg shadow-[#C48D2E]/50" />
-          <div className="absolute top-3/4 right-1/4 w-1.5 h-1.5 bg-[#D6B456] rounded-full animate-pulse delay-500 shadow-lg shadow-[#D6B456]/50" />
-          <div className="absolute left-1/3 top-1/2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-pulse delay-200 shadow-lg shadow-cyan-400/50" />
-          <div className="absolute right-1/3 top-1/3 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-800 shadow-lg shadow-blue-400/50" />
-          
-          {/* Subtle logo watermark */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-5 pointer-events-none">
-            <TapitLogo size="1.2inch" />
-          </div>
+        <div className="hero-cta flex flex-col sm:flex-row gap-4 justify-start items-start">
+          <Link href="/contact" className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 group">
+            <span>Start Your Project</span>
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link href="/portfolio" className="btn-secondary text-lg px-8 py-4">
+            View Our Work
+          </Link>
         </div>
-
-        <div className="container mx-auto px-6 relative z-10 mt-16">
-          <div className="max-w-4xl">
-            <h1 className="hero-text hero-heading text-4xl md:text-6xl lg:text-7xl font-thin mb-6 text-white hero-text-glow">
-              Transform Your
-              <span className="block hero-gradient-text">Digital Vision</span>
-            </h1>
-            <p className="hero-text hero-subtext text-base md:text-lg text-white mb-4 max-w-2xl">
-              Empower Your Business with Intelligent Software Solutions
-            </p>
-            <p className="hero-text hero-subtext text-base md:text-lg text-white mb-8 max-w-2xl">
-              At TAPit Software Company Ltd, we deliver cutting-edge, AI-driven software tailored to elevate solopreneurs and growing businesses. From custom web and mobile apps to seamless payment integrations, we build the tools that power your success in Tanzania and beyond.
-              <span className="hero-accent-text text-[#D6B456] font-light block mt-2">Innovate. Automate. Thrive.</span>
-            </p>
-            <div className="hero-cta flex flex-col sm:flex-row gap-4 items-start">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4 flex items-center space-x-2 group">
-                <span>Start Your Project</span>
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link href="/portfolio" className="bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 transition-all duration-300 text-lg px-8 py-4 rounded-lg">
-                View Our Work
-              </Link>
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+      </HeroSection>
 
       {/* Scroll Carousel Section */}
       <section className="py-12 bg-background">
